@@ -2,6 +2,7 @@
   "name": "pnpm-and-hooks",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "src/index.js",
   "husky": {
     "hooks": {
@@ -9,7 +10,7 @@
     }
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/index.js --experimental-specifier-resolution=node",
     "prepare": "husky",
     "check-rebase": "bash ./.husky/check-branch-rebase.sh"
   },
