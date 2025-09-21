@@ -2,11 +2,12 @@
   "name": "pnpm-and-hooks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "husky": {
     "pre-push": "pnpm run check-rebase"
   },
   "scripts": {
+    "start": "node src/index.js",
     "prepare": "husky",
     "check-rebase": "bash ./.husky/check-branch-rebase.sh"
   },
