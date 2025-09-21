@@ -11,8 +11,7 @@ if [[ "$current_branch" == "develop" ]] || [[ "$current_branch" == "main" ]]; th
 fi
 
 # Check if branch matches any of the conventional commit prefixes
-# if [[ "$current_branch" =~ ^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)/ ]]; then
-if [[ "$current_branch" == feat/* ]] || [[ "$current_branch" == feature/* ]]; then
+if [[ "$current_branch" =~ ^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)/ ]]; then
   # Fetch latest
   echo "Checking if branch is up-to-date with develop..."
   git fetch origin develop --quiet
