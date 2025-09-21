@@ -1,0 +1,3 @@
+#!/bin/bash
+bash .husky/check-branch-rebase.sh
+EOF
