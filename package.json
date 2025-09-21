@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "husky": {
-    "pre-push": "pnpm run check-rebase"
+    "hooks": {
+      "pre-push": "pnpm run check-rebase"
+    }
   },
   "scripts": {
     "prepare": "husky",
